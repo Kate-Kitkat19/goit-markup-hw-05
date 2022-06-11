@@ -571,7 +571,7 @@ ul {
   background-color: var(--overlay-color);
   z-index: 1;
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--typical-timing-function);
 }
 
@@ -585,7 +585,7 @@ ul {
   padding-left: 24px;
   z-index: 2;
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--typical-timing-function);
 }
 
