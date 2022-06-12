@@ -351,6 +351,7 @@ ul {
   display: flex;
   margin-right: -30px;
 }
+
 .team-member {
   background-color: var(--bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -364,6 +365,7 @@ ul {
   display: block;
   margin-bottom: 30px;
 }
+
 .member-name {
   margin-bottom: 16px;
   font-weight: 500;
@@ -680,6 +682,9 @@ ul {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  transition: opacity 250ms var(--typical-timing-function);
 }
 
 .backdrop.is-hidden {
@@ -688,20 +693,25 @@ ul {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--typical-timing-function),
+    opacity 250ms var(--typical-timing-function);
+  opacity: 1;
   width: 528px;
   height: 581px;
   background-color: var(--bcg-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  /* transform: scale(); */
 }
 
 .close-btn {
@@ -713,6 +723,7 @@ ul {
   align-items: center;
   width: 30px;
   height: 30px;
+  color: var(--regular-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
