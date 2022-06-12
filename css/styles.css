@@ -557,8 +557,8 @@ ul {
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms var(--typical-timing-function), color 250ms
-    var(--typical-timing-function), box-shadow 250ms var(--typical-timing-function);
+  transition: background-color 250ms var(--typical-timing-function),
+    color 250ms var(--typical-timing-function), box-shadow 250ms var(--typical-timing-function);
 }
 
 .btn-filters:hover,
@@ -642,7 +642,9 @@ ul {
 }
 
 .works-link:hover ::after,
-.works-link:hover .overlay-text-wrap {
+.works-link:hover .overlay-text-wrap,
+.works-link:focus ::after,
+.works-link:focus .overlay-text-wrap {
   transform: translateY(0);
 }
 
