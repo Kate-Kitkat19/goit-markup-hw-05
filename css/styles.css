@@ -296,6 +296,42 @@ ul {
   display: block;
 }
 
+.overlay-wrap {
+  display: block;
+  position: relative;
+}
+
+.overlay-wrap::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  z-index: 1;
+}
+
+.works-text-wrap {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.works-overlay-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--bcg-color);
+}
+
 .section-heading {
   margin-bottom: 50px;
   font-size: 36px;
@@ -433,7 +469,6 @@ ul {
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .address {
@@ -464,7 +499,6 @@ ul {
   font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--bcg-color);
 }
@@ -511,7 +545,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -593,7 +626,6 @@ ul {
   color: var(--bcg-color);
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
 }
 
 .works-link:hover ::after,
