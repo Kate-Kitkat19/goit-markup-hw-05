@@ -45,7 +45,6 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid salmon; */
 }
 
 .section {
@@ -533,11 +532,8 @@ ul {
   justify-content: center;
   margin-bottom: 50px;
 }
-.btn {
+.btn:not(:last-child) {
   margin-right: 8px;
-}
-.btn:last-child {
-  margin-right: 0;
 }
 
 .btn-filters {
@@ -587,7 +583,6 @@ ul {
   margin-bottom: 0;
 }
 .works-link {
-  position: relative;
   display: block;
   transition: box-shadow 250ms var(--typical-timing-function);
 }
@@ -648,7 +643,7 @@ ul {
 
 .works-link:hover .overlay,
 .works-link:focus .overlay {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .text-wrapper {
@@ -728,4 +723,9 @@ ul {
   border-radius: 50%;
 
   cursor: pointer;
+  transition: box-shadow 250ms var(--typical-timing-function);
+}
+
+.close-btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
