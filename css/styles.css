@@ -505,6 +505,7 @@ ul {
 }
 
 .footer-cta {
+  display: inline-block;
   margin-bottom: 20px;
   font-size: inherit;
   font-weight: 700;
@@ -523,6 +524,61 @@ ul {
 .footer-icons .soc-link:hover,
 .footer-icons .soc-link:focus {
   background-color: var(--accent-color);
+}
+.subscribe-form {
+  position: relative;
+}
+
+.subscription {
+  margin-left: auto;
+}
+
+.form-email-input {
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  background-color: var(--accent-color);
+  color: var(--bcg-color);
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  /* transition: background-color 250ms var(--typical-timing-function),
+    box-shadow 250ms var(--typical-timing-function); */
+}
+
+.email-label {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon.send{
+  margin-left: 10px;
 }
 
 /* PORTFOLIO */
